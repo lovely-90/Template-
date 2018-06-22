@@ -1,0 +1,274 @@
+<html>
+	<head>
+		<title>
+			Fashion 
+		</title>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat|Shadows+Into+Light" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"> 
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+
+	<!--Navbar-->
+	<nav class="navbar navbar-expand-lg navbar-fixed navbar-light bg-light">
+	    <div class="container">
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-heart" ></span style="font-size: 20px">LoveFashion</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            	<li class="nav-item active">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MEN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">WOMEN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+    	        <li><a class="nav-link" href="#">Sign Up </a></li>
+    	        <li><a class="nav-link" href="#">Login</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slide Show -->     
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="img1.jpeg" style="width:100%">
+            <div class="container text">
+		     	<div class="row">
+			    	<div class="col-lg-12">
+				    	<div id="content top-right" style="margin: auto">
+					        <p style="color:brown; font-size: 60px; font-weight: 500; width: 100%; ">Welcome to Your Own World</p>
+                            <h1 style="color: grey; font-size: 40px; font-weight: 800;">World Of Fashion</h1>
+                            <hr style="width: 30%; border-bottom: 3px brown solid; margin: auto">
+                            <button style="margin: 2% ;" class="btn btn-danger">Know More</button>
+                        </div>
+				    </div>
+			    </div>			
+		    </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="img.jpeg" style="width:100%">
+        <div class="container text">
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="content top-right">
+					    <p style="color:brown; font-size: 60px; font-weight: 500;">Welcome to Your Own World</p>
+                        <h1 style="color: grey; font-size: 40px; font-weight: 800;">World Of Fashion</h1>
+                        <hr style="width: 30%; border-bottom: 3px brown solid;margin: auto">
+                        <button style="margin: 2% ;" class="btn btn-danger">Know More</button>
+                    </div>
+				</div>
+			</div>			
+		</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="img3.jpeg" style="width:100%">
+        <div class="container text">
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="content top-right">
+					    <p style="color:brown; font-size: 60px; font-weight: 500;">Welcome to Your Own World</p>
+                        <h1 style="color: grey; font-size: 40px; font-weight: 800;">World Of Fashion</h1>
+                        <hr style="width: 30%; border-bottom: 3px brown solid;margin: auto">
+                        <button style="margin: 2% ;" class="btn btn-danger">Know More</button>
+                    </div>
+				</div>
+			</div>			
+		</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="img4.jpeg" style="width:100%">
+        <div class="container text">
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="content top-right">
+					    <p style="color:brown; font-size: 60px; font-weight: 500;">Welcome to Your Own World</p>
+                        <h1 style="color: grey; font-size: 40px; font-weight: 800;">World Of Fashion</h1>
+                        <hr style="width: 30%; border-bottom: 3px brown solid;margin: auto">
+                        <button style="margin: 2% ;" class="btn btn-danger">Know More</button>
+                    </div>
+				</div>
+			</div>			
+		</div>
+    </div>
+
+    </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+<!-- Content Section -->
+
+<div class="row middlesection">
+	<div class="col-lg-6">
+		<h1 style="text-align:center ; color: red ; font-size: 60px ;font-family: 'Montserrat', sans-serif">About Fashion</h1>
+		<hr style=" border-bottom: 2px grey dashed ; width: 60% ; margin: 3% auto">
+		<p style="color: rgb(50,100,100) ; font-size: 30px ; font-family: 'Indie Flower', cursive;">
+        Model in a modern gown reflecting the current fashion trend at a Haute couture fashion show, Paris, 2010
+        Fashion is a popular style, especially in clothing, footwear, lifestyle products, accessories, makeup, hairstyle and body. Fashion is a distinctive and often constant trend in the style in which a person dresses. It is the prevailing styles in behaviour and the newest creations of designers, technologists, engineers, and design managers.<p>
+
+     </div>
+	<div class="col-lg-6">
+		<img style="width: 95% ; height: 85% " src="img5.jpeg">
+	</div>
+	<hr style="width: 100% ; margin: 5% ">
+	<div class="col-lg-6">
+		<img style="width: 100% ; height: 80% " src="img2.jpeg">
+	</div>
+	<div class="col-lg-6">
+		<h1 style="text-align:center ; font-size: 30px ; color: red ; font-size: 60px ; font-family: 'Montserrat', sans-serif">Related Tips</h1>
+		<hr style=" border-bottom: 2px grey dashed ; width: 60% ; margin: 3% auto">
+		<p>
+        <ul class="list">
+        	<li>Accessorize With Brights</li><li>Go Hands-Free for Evening</li>
+		    <li>Hem Your Pants for a Shoe Height</li>
+		    <li>Embrace Your Shape</li>
+		    <li>Edit Your Closet</li>
+		    <li>Always Check Out the Rear View</li>
+		</p>
+	</div>
+</div>
+
+<!-- Gallery -->
+
+<div class="w3-content" style="max-width:1200px">
+  <img class="mySlides" src="img1.jpeg" style="width:100%">
+  <img class="mySlides" src="img2.jpeg" style="width:100%">
+  <img class="mySlides" src="img3.jpeg" style="width:100%">
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="img1.jpeg" style="width:100%" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="img2.jpeg" style="width:100%" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="img3.jpeg" style="width:100%" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+
+<!-- Footer -->
+<!-- Contact Section -->
+<div class="container-fluid">
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+</div>
+
+	</body>
+</html>
